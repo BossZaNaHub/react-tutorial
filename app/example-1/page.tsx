@@ -36,6 +36,7 @@ export default function Example1() {
     return (
         <div className="mx-10 my-1">
             <h1>Example 1</h1>
+            <desc>function useState</desc>
             <div className="my-10">
                 useState {declareString} &nbsp;
                 Assing to change state of variable

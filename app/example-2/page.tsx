@@ -29,6 +29,7 @@ export default function Example2() {
     return (
         <div className="mx-10 my-1">
             <h1>Example 2</h1>
+            <desc>Function useMemo</desc>
             <div className="my-10">
                 useMemo
             </div>
