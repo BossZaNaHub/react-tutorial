@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Providers } from '@/src/redux/provider'
 import { Inter, Silkscreen } from 'next/font/google'
 
 const silkscreen = Silkscreen({ weight: '400', subsets: ['latin'] })
@@ -15,9 +16,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={silkscreen.className}>{children}</body>
+      <body className={silkscreen.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
