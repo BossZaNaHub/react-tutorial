@@ -17,7 +17,7 @@ export const PokedexFindPokemon = createApi({
     baseQuery: fetchBaseQuery({baseUrl: `${pokeDexurl}/pokemon`}),
     endpoints: (builder) => ({
         findByName: builder.query<any, string>({
-            query: (name: string) => name
+            query: (name: string) => `/${name}`
         }),
     }),
 })

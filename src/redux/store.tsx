@@ -17,9 +17,9 @@ export const store = configureStore({
         // const loggerMiddleware = createLogg
         // Use Reactotron middleware in development mode
         if (process.env.NODE_ENV === 'development') {
-            const reactotronEnchancer: any = Reactotron.createEnhancer
-            console.log(reactotronEnchancer)
-            middleware.push(reactotronEnchancer); // Add Reactotron middleware to the stack
+            // const reactotronEnchancer: any = Reactotron.createEnhancer
+            // console.log(reactotronEnchancer)
+            // middleware.push(reactotronEnchancer); // Add Reactotron middleware to the stack
         }
     
         return middleware;
